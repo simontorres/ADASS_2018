@@ -12,25 +12,25 @@
 \bibliographystyle{asp2014}
 
 
-\markboth{Torres, and Brice\~no}{An on-site data reduction pipeline for the Goodman Spectrograph}      % remove/add authors as you need
+\markboth{Torres-Robledo, and Brice\~no}{An on-site data reduction pipeline for the Goodman Spectrograph}      % remove/add authors as you need
 
 \begin{document}
 
 \title{An on-site data reduction pipeline for the Goodman Spectrograph}
 
 
-\author{Sim\'on~Torres,$^1$ and C\'esar Brice\~no$^{1,2}$
+\author{Sim\'on~Torres-Robledo,$^1$ and C\'esar~Brice\~no$^{1,2}$
   \affil{$^1$SOAR Telescope, La Serena, Regi\'on de Coquimbo, Chile; \email{storres@ctio.noao.edu}}
   \affil{$^2$Cerro Tololo Interamerican Observatory, Casilla 603, La Serena, Chile}}           % remove/add authors as you need
 
 
-\paperauthor{Simón~Torres}{storres@ctio.noao.edu}{ORCID}{SOAR Telescope}{Author1 Department}{City}{State/Province}{Postal Code}{Country}
+\paperauthor{Simón~Torres-Robledo}{storres@ctio.noao.edu}{ORCID}{SOAR Telescope}{Author1 Department}{La Serena}{Regi\'on de Coquimbo}{Postal Code}{Chile}
 % remove/add authors as you need
-\paperauthor{Sample~Author2}{Author2Email@email.edu}{ORCID_Or_Blank}{Author2 Institution}{Author2 Department}{City}{State/Province}{Postal Code}{Country}
+\paperauthor{C\'esar~Brice\~no}{cbriceno@ctio.noao.edu}{ORCID_Or_Blank}{SOAR Telescope}{Author2 Department}{La Serena}{Regi\'on de Coquimbo}{Postal Code}{Chile}
 
 % leave these commented for the editors to enable them
 %\aindex{Torres,~S.}
-%\aindex{Coauthor,~A.}          % remove and add as you need
+%\aindex{Brice\~no,~C.}          % remove and add as you need
   
 \begin{abstract}
 
@@ -41,36 +41,43 @@ which aims at obtaining fully reduced data within seconds after the spectrum
 has been obtained at the telescope.  Most of the required structure, algorithms and
 processes already exist with the offline version of the GSP. The real-time or online
 version differs in its requirements for flow control, calibration files, image combination, reprocessing, observing logging assistance, etc.
-Here we present results obtained with the offline version of GSP with various instrument setups, and outline the route for implementation of the real time, online version.
+Here we present an outline of the route for implementation of a real time online version.
   
 \end{abstract}
 
 \section{Introduction}
 
-Your abstract currently has 769 characters. For more than 1000 it's possibly too long. Just sayin'
-Since this paper was written by some python code, ignore that warning, but better edit most of this rubbish away.
+The \emph{SOAR Telescope} is a 4-meter telescope located on Cerro Pach\'on, northern Chile. The \emph{Goodman High Throughput Spectrograph} (Goodman HTS) is an Imaging Spectrograph developed by the University of North Carolina, see \citet{2004SPIE.5492..331C}. Is the most requested/used instrument currently at the telescope with about 65\% of the time available on the sky. There is also another team working on an API and a Front End aimed to provide remote pseudo-automatic observation capability.
 
 
-\section{The Template}
+\section{Main Achievements}
 
-To use this 2018 template instead of the ADASS\_template, copy this file to your given paper, e.g. O3-1.tex, P5-2.tex, B4.tex, F3.tex, I.tex, place the
-paper type in the Makefile, review the Makefile, and hit ``make'' and hope for the best.  If that runs into trouble, check if your version of
-latex uses a different calling sequence.  Some instructions are in the Makefile.
+Our offline data reduction pipeline does 
 
-\section{Figures}
+\section{Design Constraints}
+
+For the live data reduction pipeline we want to get rid of the VNC system and move to a web-based service, this adds a whole new level of complexity but the results are worth the effort, the offline version of the pipeline exists as a single Python package but for the live version  we will need several other components.
+
+\subsection{Data Reduction Package}
+
+This is based on the Offline python package. The modifications required are intended to enable asynchronous data processing as well as controls, this could be achieved by adding a private REST API that would allow to modify the pipeline's settings needed to operate under different observing strategies, it has to be relatively simple allowing operation such as turn on or off file system event watching routines parse different settings, report errors.
+
+Also, larger use of Astropy's packages is in our scope.
+
+\subsection{Public REST API}
+Publishing a web application is not a simple task with security been the biggest point of concern but the application has to be stable and reliable as well. Lucky for us there are plenty of tools that allow us to simplify these tasks
+
+
+\subsection{Web Front End}
+
+\acknowledgements
 
 This template has no figures.
 Look for the larger template and Makefile how to do this.
 
 \section{References}
 
-This template has no bibtex file. 
-Look for the larger template and Makefile how to do this. By default the Makefile will create
-an empty P4-18.bib. When you add references to this, uncomment  the 
-line \verb+\bibliography+  below, make use ``make'' to
-create your beautifully looking PDF.
-
-% \bibliography{P4-18}
+\bibliography{P4-18}
 
 \end{document}
 
