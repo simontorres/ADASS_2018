@@ -47,6 +47,8 @@ Here we present an outline of the route for implementation of a real time online
 
 \section{Introduction}
 
+\citet{P9-115_adassxxvii}
+
 The \emph{SOAR Telescope} is a 4-meter telescope located on Cerro Pach\'on, northern Chile. The \emph{Goodman High Throughput Spectrograph} (Goodman HTS) is an Imaging Spectrograph developed by the University of North Carolina, see \citet{2004SPIE.5492..331C}. Is the most requested/used instrument currently at the telescope with about 65\% of the time available on the sky. There is also another team working on an API and a Front End aimed to provide remote pseudo-automatic observation capability.
 
 
@@ -60,12 +62,14 @@ For the live data reduction pipeline we want to get rid of the VNC system and mo
 
 \subsection{Data Reduction Package}
 
-This is based on the Offline python package. The modifications required are intended to enable asynchronous data processing as well as controls, this could be achieved by adding a private REST API that would allow to modify the pipeline's settings needed to operate under different observing strategies, it has to be relatively simple allowing operation such as turn on or off file system event watching routines parse different settings, report errors.
+This is based on the offline Python package. The modifications required are intended to enable asynchronous data processing as well as controls, this could be achieved by adding a private REST API that would allow to modify the pipeline's settings needed to operate under different observing strategies, it has to be relatively simple and able to work independently and automatically allowing intervention by request from the Public API, the allowed control hooks in the private API should be minimal such as authentication is not required, though the access should be constrained to the Observatory's private network. Some of the controls that should be included are: turn on or off file system event watching routines, alter settings, report errors. It should also handle a light database for redundancy in case the web server fails.
 
-Also, larger use of Astropy's packages is in our scope.
+In terms of data processing itself most of the routines are already implemented in the offline version but there are a couple of things that are still unimplemented such as optimal extraction [\citet{1989PASP..101.1032M},  \citet{1986PASP...98..609H}], flux calibration, deblending of multiple sources, low signal-to-noise extraction.
+
+As is explained in \citet{P9-115_adassxxvii}, our philosophy is to rely as much as possible on Astropy's code   [\citet{2013A&A...558A..33A} and \citet{2018AJ....156..123A}] therefore, some of the code that we had to develop because they were not implemented in Astropy will be replaced when they become available or even better we will add them to the appropriate Astropy Package.
 
 \subsection{Public REST API}
-Publishing a web application is not a simple task with security been the biggest point of concern but the application has to be stable and reliable as well. Lucky for us there are plenty of tools that allow us to simplify these tasks
+Publishing a web application is not a simple task with security been the biggest point of concern but the application has to be stable and reliable as well. Lucky for us there are plenty of tools that allow us to simplify these tasks, maybe too many of them. Since we don't have the resources to hire an entire team of developers already experts on these very specific tools, we will have to do it with the resources we have. The main
 
 
 \subsection{Web Front End}
