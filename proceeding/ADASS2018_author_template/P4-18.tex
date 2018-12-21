@@ -47,14 +47,13 @@ Here we present an outline of the route for implementation of a real time online
 
 \section{Introduction}
 
-\citet{P9-115_adassxxvii}
-
-The \emph{SOAR Telescope} is a 4-meter telescope located on Cerro Pach\'on, northern Chile. The \emph{Goodman High Throughput Spectrograph} (Goodman HTS) is an Imaging Spectrograph developed by the University of North Carolina, see \citet{2004SPIE.5492..331C}. Is the most requested/used instrument currently at the telescope with about 65\% of the time available on the sky. There is also another team working on an API and a Front End aimed to provide remote pseudo-automatic observation capability.
+The \emph{SOAR Telescope} is a 4-meter telescope located on Cerro Pach\'on, northern Chile. The \emph{Goodman High Throughput Spectrograph} (Goodman HTS) is an Imaging Spectrograph developed by the University of North Carolina, see \citet{2004SPIE.5492..331C}. Is the most requested/used instrument currently at the telescope with about 65\% of the time available on the sky. There is also another team working on an API and a Front End aimed to provide remote pseudo-automatic observation capability. This work focuses on data reduction and quick visualization.
 
 
-\section{Main Achievements}
+\section{Status of development}
 
-Our offline data reduction pipeline does 
+
+Our offline data reduction pipeline works on a two-step process. \verb=redccd= does the basic CCD data reduction, common for Imaging and Spectroscopy. \verb=redspec= does spectroscopic-specific data reduction.
 
 \section{Design Constraints}
 
@@ -69,14 +68,21 @@ In terms of data processing itself most of the routines are already implemented 
 As is explained in \citet{P9-115_adassxxvii}, our philosophy is to rely as much as possible on Astropy's code   [\citet{2013A&A...558A..33A} and \citet{2018AJ....156..123A}] therefore, some of the code that we had to develop because they were not implemented in Astropy will be replaced when they become available or even better we will add them to the appropriate Astropy Package.
 
 \subsection{Public REST API}
-Publishing a web application is not a simple task with security been the biggest point of concern but the application has to be stable and reliable as well. Lucky for us there are plenty of tools that allow us to simplify these tasks, maybe too many of them. Since we don't have the resources to hire an entire team of developers already experts on these very specific tools, we will have to do it with the resources we have. The scope of the services provided by the public API should be end user oriented only, such as, secure authentication as well as allowing 
+Publishing a web application is not a simple task with security been the biggest point of concern but the application has to be stable and reliable as well. Lucky for us there are plenty of tools that allow us to simplify these tasks, maybe too many of them. Since we don't have the resources to hire an entire team of developers already experts on these very specific tools, we will have to do it with the resources we have. The scope of the services provided by the public API should be end user oriented only, such as, secure authentication as well as channeling communications with the private API.
 
 \subsection{Web Front End}
+A highly responsive website will be favored over local GUI for one simple reason: Most of the Goodman HTS users are working remotely. Though is more difficult to implement there are several benefits that comes with it, for instance: adaptive layout, user experience less dependant on connection quality, less bandwidth usage and of course taking advantage of the interactive experience that web technology allows.
+
+We have not decided what are the tools (stack) that we are going to use, but the criteria for selecting them are: Have to be well documented and easily testable, by \emph{easily} we mean that there have to be good tools and a good testing philosophy behind its development. Testability is highlighted here but it applies to all the code of our project.
+
 
 \acknowledgements
 
-This template has no figures.
-Look for the larger template and Makefile how to do this.
+The authors would like to acknowledge the important contribution from Bruno Quint, David Sanmartim and Tina Armond.
+
+This research made use of Astropy, a community-developed core Python package for Astronomy [\citet{2013A&A...558A..33A} and \citet{2018AJ....156..123A}] 
+
+This work has been developed at the Southern Astrophysical Research (SOAR) telescope, which is a joint project of the Minist\'erio da Ci\^encia, Tecnologia, Inova\c{c}\~ao e Comunica\c{c}\~oes (MCTIC) do Brasil, the U.S. National Optical Astronomy Observatory (NOAO), the University of North Carolina at Chapel Hill (UNC), and Michigan State University (MSU). 
 
 \section{References}
 
