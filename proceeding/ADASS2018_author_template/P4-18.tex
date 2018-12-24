@@ -47,13 +47,24 @@ Here we present an outline of the route for implementation of a real time online
 
 \section{Introduction}
 
-The \emph{SOAR Telescope} is a 4-meter telescope located on Cerro Pach\'on, northern Chile. The \emph{Goodman High Throughput Spectrograph} (Goodman HTS) is an Imaging Spectrograph developed by the University of North Carolina, see \citet{2004SPIE.5492..331C}. Is the most requested/used instrument currently at the telescope with about 65\% of the time available on the sky. There is also another team working on an API and a Front End aimed to provide remote pseudo-automatic observation capability. This work focuses on data reduction and quick visualization.
-
+The \emph{SOAR Telescope} is a 4-meter telescope located on Cerro Pach\'on, northern Chile. The \emph{Goodman High Throughput Spectrograph} (Goodman HTS) is an Imaging Spectrograph developed by the University of North Carolina, see \citet{2004SPIE.5492..331C}. Is the most requested/used instrument currently at the telescope with about 65\% of the time available on the sky. SOAR Telescope works on what is called classical mode in which all approved proposals are scheduled to specific dates. Observers can go up to the summit but is more common to observe from a remote location through a VNC connection; basically from anywhere in the world, as long as there is good internet connection. With the arrival of the new generation of telescopes such as LSST or any of the giants such as GMT or E-ELT SOAR Telescope is aiming to become a follow up facility and there is a project to automatize processes in fact to robotize observation using Las Cumbres Observatory technology, this would be only partial and operation will continue the same as today. The Goodman Spectroscopic Pipeline is part of this projection too, but at the moment of writing it works manually activated once the observing night has finished and also uses a VNC plus VPN connection for allowing remote usage. Though VNC connections are relatively reliable and simple to setup they come with certain flaws, such as large bandwidth requirement, zero user management capabilities and with it; security flaws, non-responsive layout and usually requires the use of large screens. In this paper we describe the requirements for an implementation using web technology with secure authentication and responsive layout, using modern, well proven technology.
 
 \section{Status of development}
 
 
-Our offline data reduction pipeline works on a two-step process. \verb=redccd= does the basic CCD data reduction, common for Imaging and Spectroscopy. \verb=redspec= does spectroscopic-specific data reduction.
+Our offline data reduction pipeline works on a two-step process. \verb=redccd= does the basic CCD data reduction, common for Imaging and Spectroscopy, . \verb=redspec= does spectroscopic-specific data reduction.
+
+(TO EDIT)
+\subsection{Wavelength Calibration}
+
+- template description and why
+- theoretical initial guess
+- performance
+
+\subsection{Room for Improvement}
+- flux calibration
+- removing DCR
+- optimal extraction.
 
 \section{Design Constraints}
 
