@@ -52,19 +52,39 @@ The \emph{SOAR Telescope} is a 4-meter telescope located on Cerro Pach\'on, nort
 \section{Status of development}
 
 
-Our offline data reduction pipeline works on a two-step process. \verb=redccd= does the basic CCD data reduction, common for Imaging and Spectroscopy, . \verb=redspec= does spectroscopic-specific data reduction.
+Our offline data reduction pipeline works on a two-step process. \verb=redccd= does the basic CCD data reduction, common for Imaging and Spectroscopy, with some small differences for spectroscopy. \verb=redspec= does spectroscopic-specific data reduction. Processing a full night takes between three and five minutes.
 
-(TO EDIT)
 \subsection{Wavelength Calibration}
 
-- template description and why
-- theoretical initial guess
-- performance
+After attempting to obtain by several methods, including manual input we came to the conclusion that the best solution for our application is using a catalog of templates, this is a collection of comparison lamp spectra  covering all existing and usable  setups. The camera and grating angle can be adjusted to any value to obtain any desired wavelength coverage, this can lead to big problems, therefore several fixed modes were defined with a small wavelength coverage overlap spanning the whole usable wavelength range, hence the gratings with smaller dispersion will have larger number of modes. It is still possible to use instrument in \emph{Custom} mode but those do not have a template in the library for obvious reasons. There are seven gratings of 400, 600, 930, 1200, 1800, 2100, and 2400 $l/mm$ and for the last three there is no fixed mode defined.
+
+\begin{table}[!ht]
+\caption{Sample of spectroscopic modes definition for the 930 $l/mm$ grating}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+    \begin{tabular}{@{}c@{}} Grating \\ (lines/mm)  \end{tabular} & 
+    \begin{tabular}{@{}c@{}} Dispersion \\ (\AA/pixel) \end{tabular} & 
+    Coverage (\AA) & 
+    \begin{tabular}{@{}c@{}} Max R @ 5500nm \\ (3 pix with 0.46'' slit) \end{tabular}&
+    Blocking Filter \\
+\hline
+    930 & 0.42 & M1: 300-470& 4450 & -- \\
+    & & M2: 385-555 & & -- \\
+    & & M3: 470-640 & & GG-385\\
+    & & M4: 555-725 & & GG-495\\
+    & & M5: 640-810 & & GG-495\\
+    & & M6: 725-895 & & OG-570\\
+\hline
+\end{tabular}
+\end{table}
+
+The lamps in the library should not be linearized because raw data is non-linear in wavelength space, therefore reference wavelength solutions need to be non-linear, also all the lines detected are recorded in the header as well as their corresponding wavelength value used to calculate the fitting of the mathematical model used to describe the solution. Another technique we attempted is to use the grating equation in order to obtain a theoretical mathematical model, then using line list information, such as those from NIST, to build a template which then will be used to cross correlate with the comparison lamp obtained along with the science data that we want to calibrate. The problems with this method is that line list do not have accurate line intensity information and a common scenario found when trying to find out why it did not work is that the lines picked do not exist in the observed comparison lamp. This does not only have to do with the line intensity information but also the lamp itself is not perfect and also they evolve plus there is more than just a lamp involved in the process of obtaining a comparison lamp spectrum, see \citet{2018A&A...618A.118S} for a list of other aspects that affect the resulting lamp.
+
+Performance-wise the results are good, though again the precision will depend on many variables such as lamp quality, combination of grating and spectroscopic mode; this will affect the number of lines present in the lamp spectrum and ultimately the slit size. Overall, we mainly measure the solution RMS obtaining similar values to those obtained  using IRAF but automatically and in a couple of seconds or less. For instance  using the 930 l/mm grating with the mode M2 the RMS error obtained was 0.281.
 
 \subsection{Room for Improvement}
-- flux calibration
-- removing DCR
-- optimal extraction.
+
+There are still many areas where to improve, for instance, addition of a flux calibration module that should be used to create an exposure time calculator, removing DCR (\citet{2004PASP..116..148P}) which is a great tool for removing cosmic rays written in C but even though it was seamlessly integrated into the pipeline the installation adds more complication and cannot be installed using PIP. Also our goal was to use as much Astropy code as possible and this was one exception due to how well it behaved. Astroscrappy is an implementation of LACosmic (\citet{2001PASP..113.1420V}} which is wrapped by \verb=ccdproc.cosmicray_lacosmic=. At the moment we have both of them running and we realized that is just a matter of fine tunning the parameteres in order to obtain the same results. Is not an easy task though. 
 
 \section{Design Constraints}
 
