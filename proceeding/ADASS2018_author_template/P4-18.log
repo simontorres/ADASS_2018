@@ -1,15 +1,16 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.10.26)  8 NOV 2018 17:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.4.12)  27 DEC 2018 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**P4-18
+**P4-18.tex
 (./P4-18.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, uk
+rainian, russian, bulgarian, loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -28,43 +29,43 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/03 v2.15a AMS math features
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
+Package: amstext 2000/06/29 v2.01
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
+File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count87
-LaTeX Info: Redefining \frac on input line 199.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count88
 \leftroot@=\count89
-LaTeX Info: Redefining \overline on input line 297.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count90
 \DOTSCASE@=\count91
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count92
 \c@MaxMatrixCols=\count93
 \dotsspace@=\muskip10
@@ -85,11 +86,11 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks18
-LaTeX Info: Redefining \[ on input line 2735.
-LaTeX Info: Redefining \] on input line 2736.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen112
 \extrarowheight=\dimen113
 \NC@list=\toks19
@@ -173,35 +174,43 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
 LaTeX Info: Redefining \not on input line 1043.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: dvips.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
-File: dvips.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count99
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/index/index.sty
 Package: index 2004/01/20 v4.2beta Improved index support (dmj)
-\@indexbox=\insert199
+\@indexbox=\insert233
 \indexproofstyle=\toks20
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks21
 )
 \Gin@req@height=\dimen114
@@ -446,18 +455,18 @@ LaTeX Font Info:    Redeclaring math symbol \backepsilon on input line 265.
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen116
 \WF@size=\dimen117
-\c@WF@wrappedlines=\count99
+\c@WF@wrappedlines=\count100
 \WF@box=\box28
 \WF@everypar=\toks22
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/cite/chapterbib.sty
-\c@inputfile=\count100
+\c@inputfile=\count101
 Package: chapterbib 2010/09/18  v 1.17
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -469,8 +478,8 @@ Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
@@ -489,7 +498,7 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
@@ -516,13 +525,13 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen118
-\Hy@linkcounter=\count101
-\Hy@pagecounter=\count102
+\Hy@linkcounter=\count102
+\Hy@pagecounter=\count103
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count103
+\Hy@SavedSpaceFactor=\count104
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -539,15 +548,15 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count104
+\c@Hy@tempcnt=\count105
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen119
-\Fld@menulength=\count105
+\Fld@menulength=\count106
 \Field@Width=\dimen120
 \Fld@charsize=\dimen121
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -559,20 +568,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count106
-\c@Item=\count107
-\c@Hfootnote=\count108
+\Hy@abspage=\count107
+\c@Item=\count108
+\c@Hfootnote=\count109
 )
 
-Package hyperref Message: Driver: hdvipdfm.
+Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvipdfm.def
-File: hdvipdfm.def 2012/11/06 v6.83m Hyperref driver for dvipdfm
-\pdfm@box=\box29
-\c@Hy@AnnotLevel=\count109
-\HyField@AnnotCount=\count110
-\Fld@listcount=\count111
-\c@bookmark@seq@number=\count112
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count110
+\c@bookmark@seq@number=\count111
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -600,9 +606,9 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip49
 \bibsep=\skip50
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count113
+\c@NAT@ctr=\count112
 )
-\lecurrentfam=\count114
+\lecurrentfam=\count113
 
 (/usr/share/texlive/texmf-dist/tex/generic/epsf/epsf.sty
 This is `epsf.tex' v2.7.4 <14 February 2011>
@@ -616,16 +622,15 @@ This is `epsf.tex' v2.7.4 <14 February 2011>
 \epsfysize=\dimen128
 \pspoints=\dimen129
 )
-\c@tocpart=\count115
-\c@tocsect=\count116
-)
-No file P4-18.aux.
+\c@tocpart=\count114
+\c@tocsect=\count115
+) (./P4-18.aux)
 \openout1 = `P4-18.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 17.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 17.
 
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 17.
@@ -663,6 +668,34 @@ LaTeX Font Info:    Try loading font information for T1+txr on input line 17.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txr.fd
 File: t1txr.fd 2000/12/15 v3.1
 )
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count116
+\scratchdimen=\dimen130
+\scratchbox=\box29
+\nofMPsegments=\count117
+\nofMParguments=\count118
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen131
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
+\everyMPtoPDFconversion=\toks25
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 \AtBeginShipoutBox=\box30
 Package hyperref Info: Link coloring OFF on input line 17.
 
@@ -672,19 +705,18 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count117
+\c@section@level=\count122
 )
 LaTeX Info: Redefining \ref on input line 17.
 LaTeX Info: Redefining \pageref on input line 17.
 LaTeX Info: Redefining \nameref on input line 17.
+
+(./P4-18.out) (./P4-18.out)
 \@outlinefile=\write3
 \openout3 = `P4-18.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 LaTeX Font Info:    Try loading font information for OT1+txr on input line 19.
+
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
@@ -717,53 +749,70 @@ LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <9> not available
 (Font)              Font shape `T1/txtt/m/sl' tried instead on input line 24.
 
 (ASP) Begin Author
-(ASP) Author Name: Simón\nobreakspace {}Torres
+(ASP) Author Name: Sim\'on\nobreakspace {}Torres-Robledo
 (ASP) Author Email: storres@ctio.noao.edu
 (ASP) Author ORCID: ORCID
 (ASP) Author Institution: SOAR Telescope
 (ASP) Author Division: Author1 Department
-(ASP) Author City: City
-(ASP) Author State: State/Province
+(ASP) Author City: La Serena
+(ASP) Author State: Regi\'on de Coquimbo
 (ASP) Author Postal Code: Postal Code
-(ASP) Author Country: Country
+(ASP) Author Country: Chile
 (ASP) End Author
 (ASP) Begin Author
-(ASP) Author Name: Sample\nobreakspace {}Author2
-(ASP) Author Email: Author2Email@email.edu
+(ASP) Author Name: C\'esar\nobreakspace {}Brice\~no
+(ASP) Author Email: cbriceno@ctio.noao.edu
 (ASP) Author ORCID: ORCID_Or_Blank
-(ASP) Author Institution: Author2 Institution
+(ASP) Author Institution: SOAR Telescope
 (ASP) Author Division: Author2 Department
-(ASP) Author City: City
-(ASP) Author State: State/Province
+(ASP) Author City: La Serena
+(ASP) Author State: Regi\'on de Coquimbo
 (ASP) Author Postal Code: Postal Code
-(ASP) Author Country: Country
+(ASP) Author Country: Chile
 (ASP) End Author
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
 [1
 
-] [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
+{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 65--81
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--81
+
+ []
+
+[2] [3] (./P4-18.bbl [4])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
  (./P4-18.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 75.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
-
-
-Package rerunfilecheck Warning: File `P4-18.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `P4-18.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
+Package rerunfilecheck Info: File `P4-18.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
- 7117 strings out of 493030
- 97502 string characters out of 6136259
- 180963 words of memory out of 5000000
- 10548 multiletter control sequences out of 15000+600000
- 38664 words of font info for 78 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 36i,7n,40p,216b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 7781 strings out of 494820
+ 107542 string characters out of 3178049
+ 192595 words of memory out of 3000000
+ 10788 multiletter control sequences out of 15000+200000
+ 59295 words of font info for 120 fonts, out of 3000000 for 9000
+ 198 hyphenation exceptions out of 8191
+ 36i,13n,40p,1574b,463s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
+fonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/times/utmri8a.pfb>
+Output written on P4-18.pdf (5 pages, 84844 bytes).
+PDF statistics:
+ 120 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on P4-18.dvi (2 pages, 4228 bytes).

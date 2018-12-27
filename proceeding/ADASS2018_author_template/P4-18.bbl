@@ -5,4 +5,46 @@
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem[{{Astropy Collaboration} \& {Astropy
+  Contributors}(2013)}]{2013A&A...558A..33A}
+{Astropy Collaboration}, \& {Astropy Contributors} 2013, \aap, 558, A33.
+  \eprint{1307.6212}
+
+\bibitem[{{Astropy Collaboration} \& {Astropy
+  Contributors}(2018)}]{2018AJ....156..123A}
+--- 2018, \aj, 156, 123. \eprint{1801.02634}
+
+\bibitem[{{Clemens} et~al.(2004){Clemens}, {Crain}, \&
+  {Anderson}}]{2004SPIE.5492..331C}
+{Clemens}, J.~C., {Crain}, J.~A., \& {Anderson}, R. 2004, in Ground-based
+  Instrumentation for Astronomy, edited by A.~F.~M. {Moorwood}, \& M.~{Iye},
+  vol. 5492 of SPIE, 331
+
+\bibitem[{{Horne}(1986)}]{1986PASP...98..609H}
+{Horne}, K. 1986, \pasp, 98, 609
+
+\bibitem[{{Marsh}(1989)}]{1989PASP..101.1032M}
+{Marsh}, T.~R. 1989, \pasp, 101, 1032
+
+\bibitem[{{Massey} \& {Hanson}(2013)}]{2013pss2.book...35M}
+{Massey}, P., \& {Hanson}, M.~M. 2013, {Astronomical Spectroscopy}, 35
+
+\bibitem[{{Pych}(2004)}]{2004PASP..116..148P}
+{Pych}, W. 2004, \pasp, 116, 148. \eprint{astro-ph/0311290}
+
+\bibitem[{{Sarmiento} et~al.(2018){Sarmiento}, {Reiners}, {Huke}, {Bauer},
+  {Guenter}, {Seemann}, \& {Wolter}}]{2018A&A...618A.118S}
+{Sarmiento}, L.~F., {Reiners}, A., {Huke}, P., {Bauer}, F.~F., {Guenter},
+  E.~W., {Seemann}, U., \& {Wolter}, U. 2018, \aap, 618, A118.
+  \eprint{1806.07361}
+
+\bibitem[{{Torres-Robledo} et~al.(2017){Torres-Robledo}, {Briceno}, {Quint}, \&
+  {Sanmartim}}]{P9-115_adassxxvii}
+{Torres-Robledo}, S., {Briceno}, C., {Quint}, B., \& {Sanmartim}, D. 2017, in
+  ADASS XXVIII, edited by TBD (San Francisco: ASP), vol. TBD of ASP Conf. Ser.,
+  TBD
+
+\bibitem[{{van Dokkum}(2001)}]{2001PASP..113.1420V}
+{van Dokkum}, P.~G. 2001, \pasp, 113, 1420. \eprint{astro-ph/0108003}
+
 \end{thebibliography}
