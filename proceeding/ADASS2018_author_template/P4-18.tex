@@ -52,7 +52,7 @@ The \emph{SOAR Telescope} is a 4-meter telescope located on Cerro Pach\'on, nort
 \section{Status of development}
 
 
-Our offline data reduction pipeline works on a two-step process. \verb=redccd= does the basic CCD data reduction, common for Imaging and Spectroscopy, with some small differences for spectroscopy. \verb=redspec= does spectroscopic-specific data reduction. Processing a full night takes between three and five minutes.
+Our offline data reduction pipeline works on a two-step process. \verb=redccd= does the basic CCD data reduction, common for Imaging and Spectroscopy, with some small differences for spectroscopy. \verb=redspec= does spectroscopic-specific data reduction (\citet{2013pss2.book...35M}). Processing a full night takes between three and five minutes.
 
 \subsection{Wavelength Calibration}
 
@@ -84,7 +84,7 @@ Performance-wise the results are good, though again the precision will depend on
 
 \subsection{Room for Improvement}
 
-There are still many areas where to improve, for instance, addition of a flux calibration module that should be used to create an exposure time calculator, removing DCR (\citet{2004PASP..116..148P}) which is a great tool for removing cosmic rays written in C but even though it was seamlessly integrated into the pipeline the installation adds more complication and cannot be installed using PIP. Also our goal was to use as much Astropy code as possible and this was one exception due to how well it behaved. Astroscrappy is an implementation of LACosmic (\citet{2001PASP..113.1420V}} which is wrapped by \verb=ccdproc.cosmicray_lacosmic=. At the moment we have both of them running and we realized that is just a matter of fine tunning the parameteres in order to obtain the same results. Is not an easy task though. 
+There are still many areas where to improve, for instance, addition of a flux calibration module that should be used to create an exposure time calculator, removing DCR (\citet{2004PASP..116..148P}) which is a great tool for removing cosmic rays written in C but even though it was seamlessly integrated into the pipeline the installation adds more complication and cannot be installed using PIP. Also our goal was to use as much Astropy code as possible and this was one exception due to how well it behaved. Astroscrappy is an implementation of LACosmic (\citet{2001PASP..113.1420V}) which is wrapped by \verb=ccdproc.cosmicray_lacosmic=. At the moment we have both of them running and we realized that is just a matter of fine tunning the parameteres in order to obtain the same results. Is not an easy task though. 
 
 \section{Design Constraints}
 
