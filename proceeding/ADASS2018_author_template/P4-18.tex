@@ -24,7 +24,7 @@
   \affil{$^2$Cerro Tololo Interamerican Observatory, Casilla 603, La Serena, Chile}}           % remove/add authors as you need
 
 
-\paperauthor{Simón~Torres-Robledo}{storres@ctio.noao.edu}{ORCID}{SOAR Telescope}{Author1 Department}{La Serena}{Regi\'on de Coquimbo}{Postal Code}{Chile}
+\paperauthor{Sim\'on~Torres-Robledo}{storres@ctio.noao.edu}{ORCID}{SOAR Telescope}{Author1 Department}{La Serena}{Regi\'on de Coquimbo}{Postal Code}{Chile}
 % remove/add authors as you need
 \paperauthor{C\'esar~Brice\~no}{cbriceno@ctio.noao.edu}{ORCID_Or_Blank}{SOAR Telescope}{Author2 Department}{La Serena}{Regi\'on de Coquimbo}{Postal Code}{Chile}
 
@@ -58,7 +58,7 @@ Our offline data reduction pipeline is based on a two-step process. \verb=redccd
 
 \subsection{Wavelength Calibration}
 
-After experimenting obtaining wavelength calibrations with several methods, including through interactive manual input, we came to the conclusion that the best solution for our application is to use a catalog of templates, a collection of comparison lamp spectra taken with our own hollow cathode lamps. The Goodman spectrograph is a highly configurable instrument, which means that the camera and grating angle can be adjusted to almost any combination of values, to obtain a wide range of possible wavelength coverages. This flexibility leads to practical problems when trying to setup a library of comparison lamps for various modes, because of the large number of possible combinations of grating, resolution, wavelength range.  Therefore, we decided to setup the spectral lamp library limited to the most often used modes, for the more frequently requested gratings. It is still possible to use instrument in \emph{Custom} mode (in which one defines the central wavelength for the Littrow mode) but those do not have a template in the library, for obvious reasons. There are seven gratings: 400, 600, 930, 1200, 1800, 2100, and 2400 $l/mm$ and for the last three there is no fixed mode defined. 
+After experimenting obtaining wavelength calibrations with several methods, including through interactive manual input, we came to the conclusion that the best solution for our application was to use a catalog of templates, a collection of comparison lamp spectra taken with our own hollow cathode lamps. The Goodman spectrograph is a highly configurable instrument, which means that the camera and grating angle can be adjusted to almost any combination of values, yielding a wide range of possible wavelength coverages. This flexibility leads to practical problems when trying to setup a library of comparison lamps for various modes, because of the large number of possible combinations of gratings, camer and hence wavelength ranges.  Therefore, we decided to setup the spectral lamp library limited to the most often used modes, for the more frequently requested gratings. It is still possible to use instrument in \emph{Custom} mode (in which one defines the central wavelength for the Littrow mode) but those do not have a template in the library, for obvious reasons. There are seven gratings: 400, 600, 930, 1200, 1800, 2100, and 2400 $l/mm$ and for the last three there is no fixed mode defined. 
 
 \begin{table}[!ht]
 \caption{Sample of spectroscopic modes definition for the 930 $l/mm$ grating}
@@ -109,13 +109,7 @@ A highly responsive website will be favored over a local GUI for one simple reas
 We have not decided what are the tools (stack) that we are going to use, but the criteria for selecting them are: Have to be well documented and easily testable, by \emph{easily} we mean that there have to be good tools and a good testing philosophy behind its development. Testability is highlighted here but it applies to all the code of our project.
 
 
-\acknowledgements
-
-The authors would like to acknowledge the important contribution from Bruno Quint, David Sanmartim and Tina Armond.
-
-This research made use of Astropy, a community-developed core Python package for Astronomy [\citet{2013A&A...558A..33A} and \citet{2018AJ....156..123A}] 
-
-This work has been developed at the Southern Astrophysical Research (SOAR) telescope, which is a joint project of the Minist\'erio da Ci\^encia, Tecnologia, Inova\c{c}\~ao e Comunica\c{c}\~oes (MCTIC) do Brasil, the U.S. National Optical Astronomy Observatory (NOAO), the University of North Carolina at Chapel Hill (UNC), and Michigan State University (MSU). 
+\acknowledgements The authors would like to acknowledge the important contribution from Bruno Quint, David Sanmartim and Tina Armond. This research made use of Astropy, a community-developed core Python package for Astronomy [\citet{2013A&A...558A..33A} and \citet{2018AJ....156..123A}]. This work has been developed at the Southern Astrophysical Research (SOAR) telescope, which is a joint project of the Minist\'erio da Ci\^encia, Tecnologia, Inova\c{c}\~ao e Comunica\c{c}\~oes (MCTIC) do Brasil, the U.S. National Optical Astronomy Observatory (NOAO), the University of North Carolina at Chapel Hill (UNC), and Michigan State University (MSU). 
 
 \bibliography{P4-18}
 
