@@ -7,45 +7,45 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both author and editor fields in 2013pss2.book...35M
 Warning--missing publisher in 2013pss2.book...35M
 Warning--empty chapter and pages in 2013pss2.book...35M
-You've used 10 entries,
+You've used 7 entries,
             3204 wiz_defined-function locations,
-            916 strings with 8174 characters,
-and the built_in function-call counts, 5564 in all, are:
-= -- 399
-> -- 227
-< -- 9
-+ -- 85
-- -- 75
-* -- 419
-:= -- 858
-add.period$ -- 5
-call.type$ -- 10
-change.case$ -- 64
-chr.to.int$ -- 10
-cite$ -- 13
-duplicate$ -- 440
-empty$ -- 458
-format.name$ -- 104
-if$ -- 1109
+            894 strings with 7633 characters,
+and the built_in function-call counts, 3891 in all, are:
+= -- 275
+> -- 148
+< -- 7
++ -- 55
+- -- 48
+* -- 295
+:= -- 591
+add.period$ -- 2
+call.type$ -- 7
+change.case$ -- 43
+chr.to.int$ -- 7
+cite$ -- 10
+duplicate$ -- 315
+empty$ -- 328
+format.name$ -- 72
+if$ -- 774
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 94
-newline$ -- 38
-num.names$ -- 42
-pop$ -- 199
+missing$ -- 67
+newline$ -- 29
+num.names$ -- 30
+pop$ -- 147
 preamble$ -- 1
-purify$ -- 74
+purify$ -- 50
 quote$ -- 0
-skip$ -- 174
+skip$ -- 122
 stack$ -- 0
-substring$ -- 193
-swap$ -- 220
+substring$ -- 134
+swap$ -- 161
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 87
+type$ -- 60
 warning$ -- 3
-while$ -- 39
+while$ -- 28
 width$ -- 0
-write$ -- 112
+write$ -- 79
 (There were 3 warnings)
